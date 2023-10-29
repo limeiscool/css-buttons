@@ -57,6 +57,11 @@ body {
 
 .b1:hover a {
   letter-spacing: 2px;
+  transition: 0.25s;
+}
+
+.b1:active a {
+  letter-spacing: 1.5px;
 }
 
 .b1 a::before {
@@ -89,13 +94,14 @@ body {
 
 .b2 {
   background: rgba(63, 255, 79, 0.4);
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.8);
   border: 3px groove rgba(63, 255, 79, 0.2);
   border-radius: 18px;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 0.75s;
+  transition: 0.25s;
 }
 
 .b2:hover {
@@ -105,14 +111,18 @@ body {
 
 .b2 a {
   color: rgb(0, 0, 0);
-  padding: 12px 24px;
+  padding: 10px 24px;
   backdrop-filter: blur(6px);
   letter-spacing: 1px;
-  transition: 0.75s;
+  transition: 0.25s;
 }
 
 .b2:hover a {
   letter-spacing: 1.75px;
+}
+
+.b2:active a {
+  padding: 8px 22px;
 }
 
 .b2::before,
@@ -145,4 +155,32 @@ body {
 .b2 a i {
   transform: rotate(90deg);
   margin-left: 5px;
+}
+
+.b3 {
+  border-radius: 6px;
+  overflow: hidden;
+  border: 3px groove rgba(100, 100, 100, 0.788);
+  background-color: whitesmoke;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.8);
+  transition: 0.5s;
+}
+
+.b3 a {
+  color: white;
+  padding: 9px;
+  background-color: rgba(128, 128, 128, 0.901);
+}
+
+.b3:hover a {
+  background-color: rgba(128, 128, 128, 0.801);
+}
+
+.b3:active a {
+  background-color: rgba(128, 128, 128, 0.901);
+  padding: 8px;
+}
+
+.b3 a i {
+  margin-left: 6px;
 }
