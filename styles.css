@@ -13,8 +13,8 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   border: 1px solid black;
   border-radius: 10px;
-  height: 600px;
-  width: 800px;
+  width: 900px;
+  aspect-ratio: 1.25 / 1;
 }
 
 .btn {
@@ -175,12 +175,13 @@ body {
   background-color: rgba(255, 255, 255, 0.3);
   height: 100%;
   width: 5px;
-  transform: skew(45deg) translateX(45px);
+  transform: translateX(42px);
   z-index: 0;
+  transition: ease-in 0.25s;
 }
 
 .b3:hover::after {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(71, 252, 71, 0.6);
 }
 
 .b3:active::after {
@@ -202,6 +203,11 @@ body {
   padding: 8px;
 }
 
+.b3:hover a i {
+  color: rgb(71, 252, 71);
+}
+
 .b3 a i {
   margin-left: 6px;
+  transition: color ease-in 0.35s;
 }
